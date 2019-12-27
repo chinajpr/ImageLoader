@@ -32,8 +32,8 @@ public class MemoryCache implements BitmapCache {
     }
 
     @Override
-    public void get(BitmapRequest request) {
-        lruCache.get(request.getImageUriMd5());
+    public Bitmap get(BitmapRequest request) {
+        return lruCache.get(request.getImageUriMd5());
     }
 
     @Override

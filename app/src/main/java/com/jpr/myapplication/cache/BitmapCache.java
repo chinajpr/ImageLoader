@@ -23,7 +23,7 @@ public interface BitmapCache {
      * 获取缓存
      * @param request
      */
-    void get(BitmapRequest request);
+    Bitmap get(BitmapRequest request);
 
     /**
      * 移除缓存
